@@ -1,1 +1,8 @@
 // Заголовки, общие БЄМ блоки и проче...
+.flag-ua {
+	display: inline-block;
+	width: rem(14);
+	height: rem(15);
+	background: url("@img/flag-uk.png") left no-repeat;
+}
+

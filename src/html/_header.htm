@@ -16,8 +16,62 @@
 		</div>
 	</div>
 	
-	<div class="header__body">
-
+	<div class="header__body body-header">
+		<div class="body-header__container">
+			<div class="body-header__left-block">
+				<a href="" class="body-header__logo">
+					<img src="@img/logo.png" alt="TIME STORE">
+				</a>
+				<div class="body-header__phones phones-header">
+					<div class="phones-header__body">
+						<a href="tel:+380685746310" class="phones-header__phone">+38(068) 574 63 10</a>
+						<button type="button" data-popup="#callback" class="phones-header__callback">Передзвоніть мені</button>
+					</div>
+					<div data-spollers class="phones-header__options">
+						<div class="phones-header__options-item">
+							<button type="button" data-spoller data-spoller-close class="phones-header__options-arrow _icon-arrow-down"></button>
+							<ul class="phones-header__options-list">
+								<li><a href="tel:+380660437675" class="phones-header__phone">+38(066) 043 76 75</a></li>
+								<!-- <li><a href="tel:+380660437676" class="phones-header__phone">+38(066) 043 76 76</a></li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-da=".search-action-header__body,1023.98" class="body-header__search">
+				<form action="#" class="search-header">
+					<button type="submit" class="search-header__btn-search _icon-search"></button>
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введіть запит" class="search-header__input">
+					<button type="reset" class="search-header__btn-reset _icon-x"></button>
+				</form>
+			</div>
+			
+			<div class="body-header__actions actions-header">
+				<div data-spollers class="actions-header__action search-action-header">
+					<div class="search-action-header__item">
+						<button type="button" data-spoller data-spoller-close class="actions-header__icon search-action-header__icon _icon-search"></button>
+						<div class="search-action-header__body"></div>
+					</div>
+				</div>
+				<a href="" class="actions-header__action account-header">
+					<div class="actions-header__icon account-header__icon _icon-account"></div>
+					<div class="actions-header__text">Кабінет</div>
+				</a>
+				<a href="" class="actions-header__action compare-header">
+					<div class="actions-header__icon compare-header__icon _icon-compare">
+						<span class="actions-header__counter compare-header__counter">4</span>
+					</div>
+					<div class="actions-header__text compare-header__text">Порівняння</div>
+				</a>
+				<a href="" class="actions-header__action cart-header">
+					<div class="actions-header__icon cart-header__icon _icon-cart">
+						<span class="actions-header__counter cart-header__counter">4</span>
+					</div>
+					<div class="actions-header__text cart-header__text">Корзина</div>
+				</a>
+			</div>
+		</div>
 	</div>
+	
 	<div class="header__catalog"></div>
 </header>
