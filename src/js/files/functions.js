@@ -413,22 +413,42 @@ export function tabs() {
 Сниппет (HTML): menu
 */
 export function menuInit() {
-	if (document.querySelector(".icon-menu")) {
+	if (document.querySelector(".icon-top-menu")) {
 		document.addEventListener("click", function (e) {
-			if (bodyLockStatus && e.target.closest('.icon-menu')) {
+			console.log(bodyLockStatus);
+			if (bodyLockStatus && !document.documentElement.classList.contains("lock") && e.target.closest('.icon-top-menu')) {
 				bodyLockToggle();
-				document.documentElement.classList.toggle("menu-open");
+				document.documentElement.classList.toggle("top-menu-open");
+			} else {
+				if (bodyLockStatus && !e.target.closest('.menu-top-header__body') && document.documentElement.classList.contains("top-menu-open")) {
+					bodyLockToggle();
+				document.documentElement.classList.toggle("top-menu-open");
+				}
+			}
+		});
+	};
+	if (document.querySelector(".icon-menu-catalog")) {
+		document.addEventListener("click", function (e) {
+			console.log(bodyLockStatus);
+			if (bodyLockStatus && (e.target.closest('.icon-menu-catalog') || e.target.closest('.close-menu-catalog'))) {
+				bodyLockToggle();
+				document.documentElement.classList.toggle("menu-catalog-open");
+			} else {
+				if (bodyLockStatus && !e.target.closest('.menu-catalog-header__body') && document.documentElement.classList.contains("menu-catalog-open")) {
+					bodyLockToggle();
+				document.documentElement.classList.toggle("menu-catalog-open");
+				}
 			}
 		});
 	};
 }
 export function menuOpen() {
 	bodyLock();
-	document.documentElement.classList.add("menu-open");
+	document.documentElement.classList.add("menu-catalog-open");
 }
 export function menuClose() {
 	bodyUnlock();
-	document.documentElement.classList.remove("menu-open");
+	document.documentElement.classList.remove("menu-catalog-open");
 }
 // Модуль "показать еще" =======================================================================================================================================================================================================================
 /*
