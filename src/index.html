@@ -6,18 +6,75 @@
 	<body>
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
-			<main class="page">
-			<div class="page__container">
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam unde velit similique veniam illo dolore repellendus, consectetur fugiat ratione fugit at? Dolore, totam sunt! At fuga voluptates dicta cumque. Eum?</p>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam nihil quae fugit dicta est blanditiis adipisci minima quos id, suscipit optio sunt! Molestiae magni commodi sint doloribus, dolorem voluptates atque!</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis similique qui, autem suscipit itaque aperiam obcaecati necessitatibus aliquam tempore veniam earum ipsum debitis! Quod, rerum sed at incidunt nihil nesciunt.</p>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint magnam nam velit molestiae delectus vitae, quia reiciendis? Eligendi id magnam, facere at numquam repellat tempora quas dolor, dolorum omnis qui?</p>				
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aperiam perspiciatis fugiat delectus id, vel dolorem quas totam sit eius, porro, obcaecati facilis eos voluptas maiores sunt incidunt! Enim, distinctio.</p>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam unde velit similique veniam illo dolore repellendus, consectetur fugiat ratione fugit at? Dolore, totam sunt! At fuga voluptates dicta cumque. Eum?</p>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam nihil quae fugit dicta est blanditiis adipisci minima quos id, suscipit optio sunt! Molestiae magni commodi sint doloribus, dolorem voluptates atque!</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis similique qui, autem suscipit itaque aperiam obcaecati necessitatibus aliquam tempore veniam earum ipsum debitis! Quod, rerum sed at incidunt nihil nesciunt.</p>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint magnam nam velit molestiae delectus vitae, quia reiciendis? Eligendi id magnam, facere at numquam repellat tempora quas dolor, dolorum omnis qui?</p>				
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aperiam perspiciatis fugiat delectus id, vel dolorem quas totam sit eius, porro, obcaecati facilis eos voluptas maiores sunt incidunt! Enim, distinctio.</p>				
+			<main class="page home-page">
+				<div class="home-page__container">
+					<section class="home-page__main-slider main-slider">
+						<div class="main-slider__slider swiper">
+							<div class="main-slider__wrapper swiper-wrapper">
+								<div class="main-slider__slide slide-main-slider main-slider_slide-1 swiper-slide">
+									<div class="slide-main-slider__content">
+										<h2 class="slide-main-slider__title">Купуй годинник</h2>
+										<div class="slide-main-slider__subtitle">За найкращими цінами від офіційного диллера</div>
+										<button type="button" class="slide-main-slider__button button button_primary button_wide">Дізнатись більше</button>
+									</div>
+									<div class="slide-main-slider__image">
+										<img src="@img/main-page/main-slider_slide-1.png" alt="Годинник">
+									</div>
+								</div>
+								<div class="main-slider__slide slide-main-slider main-slider_slide-2 swiper-slide">
+									<div class="slide-main-slider__content">
+										<h2 class="slide-main-slider__title">Купуй годинник</h2>
+										<div class="slide-main-slider__subtitle">За найкращими цінами від офіційного диллера</div>
+										<button type="button" class="slide-main-slider__button button button_primary button_wide">Дізнатись більше</button>
+									</div>
+									<div class="slide-main-slider__image">
+										<img src="@img/main-page/main-slider_slide-1.png" alt="Годинник">
+									</div>
+								</div>
+								<div class="main-slider__slide slide-main-slider main-slider_slide-3 swiper-slide">
+									<div class="slide-main-slider__content">
+										<h2 class="slide-main-slider__title">Купуй годинник</h2>
+										<div class="slide-main-slider__subtitle">За найкращими цінами від офіційного диллера</div>
+										<button type="button" class="slide-main-slider__button button button_primary button_wide">Дізнатись більше</button>
+									</div>
+									<div class="slide-main-slider__image">
+										<img src="@img/main-page/main-slider_slide-1.png" alt="Годинник">
+									</div>
+								</div>
+								
+							</div>
+							<div class="main-slider__pagination swiper-pagination"></div>
+						</div>
+					</section>
+					<section class="home-page__gender-catalog gender-catalog">
+						<div class="gender-catalog__item item-gender-catalog item-gender-catalog_for-men">
+							<div class="item-gender-catalog__body">
+								<h3 class="item-gender-catalog__title">Для чоловіків</h3>
+								<button type="button" class="item-gender-catalog__button button button_secondary">Дивитись</button>
+							</div>
+							<div class="item-gender-catalog__image">
+								<img src="@img/main-page/gender-catalog_for-men.png" alt="Для чоловіків">
+							</div>
+						</div>
+						<div class="gender-catalog__item item-gender-catalog item-gender-catalog_for-women">
+							<div class="item-gender-catalog__body">
+								<h3 class="item-gender-catalog__title">Для жінок</h3>
+								<button type="button" class="item-gender-catalog__button button button_secondary">Дивитись</button>
+							</div>
+							<div class="item-gender-catalog__image">
+								<img src="@img/main-page/gender-catalog_for-women.png" alt="Для жінок">
+							</div>
+						</div>
+						<div class="gender-catalog__item item-gender-catalog item-gender-catalog_for-children">
+							<div class="item-gender-catalog__body">
+								<h3 class="item-gender-catalog__title">Для дітей</h3>
+								<button type="button" class="item-gender-catalog__button button button_secondary">Дивитись</button>
+							</div>
+							<div class="item-gender-catalog__image">
+								<img src="@img/main-page/gender-catalog_for-children.png" alt="Для дітей">
+							</div>
+						</div>
+					</section>
 				</div>
 			</main>
 			@@include('html/_footer.htm',{})

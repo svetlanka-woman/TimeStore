@@ -2,13 +2,48 @@
 // Снипет (HTML): btn
 
 .button {
-	display: inline-flex;
-	padding: 0px 0px;
-	@media (any-hover: hover) {
-		&:hover {
-		}
-	}
+	display: inline-block;
+	min-height: rem(40);
+	font-weight: 500;
+	font-size: rem(16);
+	text-align: center;
+	line-height: math.div(24, 16);
+	border-radius: 6px;
+	padding: rem(8) rem(16);
+	// @media (max-width: $mobileSmall){
+	// 	width: 100%;
+	// }
 	&._fw {
 		width: 100%;
 	}
+	// .button_primary
+	&_primary {
+		color: #fff;
+		background-color: $colorRed;
+		transition: background-color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $colorDarkRed;
+			}
+		}
+	}
+	// .button_secondary
+	&_secondary {
+		border: 2px solid $colorGrey;
+		background-color: transparent;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $colorDarkGrey;
+				border: 2px solid $colorDarkGrey;
+				color: #fff;
+			}
+		}
+	}
+	// .button_wide 
+	&_wide {
+		min-height: rem(56);
+		padding: rem(16) rem(32);
+	}
 }
+

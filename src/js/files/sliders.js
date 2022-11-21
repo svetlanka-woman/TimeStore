@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 /*
 Основные модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -19,7 +19,7 @@ EffectFade, Lazy, Manipulation
 // Базовые стили
 import "../../scss/base/swiper.scss";
 // Полный набор стилей из scss/libs/swiper.scss
-// import "../../scss/libs/swiper.scss";
+import "../../scss/libs/swiper.scss";
 // Полный набор стилей из node_modules
 // import 'swiper/css';
 
@@ -27,12 +27,12 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на странице
-	if (document.querySelector('.swiper')) { // Указываем класс нужного слайдера
+	if (document.querySelector('.main-slider__slider')) { // Указываем класс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.swiper', { // Указываем класс нужного слайдера
+		new Swiper('.main-slider__slider', { // Указываем класс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation],
+			modules: [Navigation, Pagination, Autoplay],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -42,26 +42,27 @@ function initSliders() {
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+			loop: true,
 			//preloadImages: false,
 			//lazy: true,
 
-			/*
+			
 			// Эффекты
 			effect: 'fade',
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			*/
+			
 
 			// Пагинация
-			/*
+			
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
+				type: 'bullets',
 			},
-			*/
+			
 
 			// Скроллбар
 			/*

@@ -25,17 +25,21 @@ $fontSize: rem(16); // где 14(px) - размер шрифта по умолч
 // Основные цвета
 $mainColor: #1E2124; // Цвет шрифта по умолчанию
 $colorGrey: #6E747A; 
-$colorGreyBackGround: #F3F4F5;
-$colorGreyBorderCard: #E4E6E8;
-$colorGreyBorder: #D7D9DB;
-$colorHoverGrey: #adb5bd;
+$colorDarkGrey: #505357;
+$colorBackgroundGrey: #F3F4F5;
+$colorBorderCardGrey: #E4E6E8;
+$colorBorderGrey: #D7D9DB;
+$colorHoverGrey: #D7D9DB;
+// $colorHoverGrey: #adb5bd;
 $colorBlueLink: #295FCC;
 $colorRed: #DA3E3E;
+$colorDarkRed: #AD0707;
+$colorBackgroundPink: #F5DCD8;
 
 // Настройки адаптивной сетки ===============================================================================================================================================================================================================================================================================================
 
 // Минимальная ширина страницы
-$minWidth: 320;
+$minWidth: 360;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
@@ -157,6 +161,6 @@ body {
 // @import "footer";
 
 // Подключение стилей отдельных страниц
-// @import "home";
+@import "home-page";
 
 

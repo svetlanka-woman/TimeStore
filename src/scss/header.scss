@@ -8,13 +8,13 @@
 	}
 	// .header__body
 	&__body {
-		background-color: $colorGreyBackGround;
-		border-bottom: 1px solid $colorGreyBorder;
+		background-color: $colorBackgroundGrey;
+		border-bottom: 1px solid $colorBorderGrey;
 	}
 	// .header__catalog
 	&__catalog {
 		background-color: #fff;
-		border-bottom: 1px solid $colorGreyBorder;
+		border-bottom: 1px solid $colorBorderGrey;
 	}
 }
 
@@ -185,6 +185,7 @@
 }
 .phones-header {
 	display: flex;
+	gap: rem(2);
 	align-items: center;
 	@media (max-width: $mobile) {
 		display: none;
@@ -196,11 +197,12 @@
 	}
 	// .phones-header__phone
 	&__phone {
-		width: rem(149);
+		width: rem(147);
+		display: block;
 		font-weight: 600;
 		font-size: rem(14);
 		line-height: math.div(20, 14);
-		background-color: $colorGreyBackGround;
+		background-color: $colorBackgroundGrey;
 		padding: 0 rem(4);
 		z-index: 6;
 		transition: all 0.3s ease 0s;
@@ -240,11 +242,15 @@
 		z-index: 5;
 		position: absolute;
     right: 14px;
-    top: 6px;
-    width: 147px;
-		padding: rem(0) rem(0) rem(3) rem(0);
-		background-color: $colorGreyBackGround;
+    top: 8px;
+    // width: 147px;
+		border-radius: 5px;
+		padding: rem(0) rem(0) rem(2) rem(0);
+		background-color: $colorBackgroundGrey;
 		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1), 0px 2px 12px rgba(0, 0, 0, 0.1);
+		// a {
+		// 	padding: rem(2) rem(4);
+		// }
 	}
 }
 .search-header {
@@ -295,16 +301,16 @@
 .actions-header {
 	display: flex;
 	padding: 0 rem(10);
-	column-gap: rem(12);
-	@include adaptiveValue("column-gap", 12, 0, 1, 1440, 1024);
+	column-gap: rem(20);
+	@include adaptiveValue("column-gap", 20, 8, 1, 1440, 1024);
 	@media (max-width: $tabletBig) {
-		column-gap: rem(45);
+		column-gap: rem(21);
 		align-items: center;
 	}
-	@include adaptiveValue("column-gap", 38, 20, 1, 767, 300);
+	@include adaptiveValue("column-gap", 20, 4, 1, 767, 320);
 	
 	@media (max-width: rem(320)) {
-		column-gap: rem(20);
+		column-gap: rem(4);
 	}
 	// .actions-header__action
 	&__action {
@@ -312,6 +318,13 @@
 		align-items: center;
 		flex-direction: column;
 		justify-content: space-between;
+		padding: rem(3) rem(6); 
+		@media (max-width: $tabletBig) {
+			padding: rem(10) rem(12);
+		}
+		@media (max-width: $mobile) {
+			padding: rem(6) rem(8);
+		}
 		@media (any-hover: hover){
 			&:hover{
 				// color: $colorHoverGrey;
@@ -329,7 +342,6 @@
 	}
 	// .actions-header__text
 	&__text {
-		padding: 0 rem(10);
 		font-size: rem(14);
 		@media (max-width: $tabletBig) {
 			display: none;
@@ -350,7 +362,7 @@
 		right: rem(-15);
 		top: rem(-6);
 		display: flex;
-		border: 2px solid $colorGreyBackGround;
+		border: 2px solid $colorBackgroundGrey;
 		box-sizing: content-box;
 	}
 }
@@ -417,7 +429,7 @@
 		padding: rem(8) rem(17);
 		@include adaptiveValue("padding-left", 17, 10, 0, 479, 320);
 		@include adaptiveValue("padding-right", 17, 10, 0, 479, 320);
-		border-bottom: 1px solid $colorGreyBorder;
+		border-bottom: 1px solid $colorBorderGrey;
 		@media (max-width: $mobile) {
 			padding-top: rem(4);
 			padding-bottom: rem(3);
@@ -471,7 +483,7 @@
 			align-items: flex-start;
 			flex-direction: column;
 			height: 100%;
-			border-right: 1px solid $colorGreyBorder;
+			border-right: 1px solid $colorBorderGrey;
 			top: 0;
 			left: -100%;
 			overflow: auto;
@@ -504,6 +516,14 @@
 		padding: rem(10) rem(12);
 		font-weight: 600;
 		font-size: rem(14);
+		border-radius: 5px;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover){
+			&:hover{
+				color: $colorRed;
+				text-decoration: underline;
+			}
+		}
 		// .menu-catalog-header__link_red
 		&_red {
 			color: $colorRed;
