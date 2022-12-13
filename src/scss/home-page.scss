@@ -22,6 +22,9 @@
   // .home-page__slider-sale
   &__slider-sale {
   }
+  // .home-page__advantages
+  &__advantages {
+  }
 }
 
 //====================================================================================================
@@ -578,6 +581,54 @@
     display: none;
   }
 }
+
+//====================================================================================================
+
+.advantages {
+  display: flex;
+  padding: rem(24) 0;
+  gap: rem(8);
+  @media (max-width: $mobile) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  // .advantages__item
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(24) rem(16);
+    gap: 8px;
+    background: $colorBackgroundGrey;
+    border-radius: 16px;
+    text-align: center;
+    @media (max-width: $mobile) {
+      flex: 1 1 33%;
+      &:last-child {
+        flex: 0 1 50%;
+      }  
+    }
+  }
+  // .advantages__icon
+  &__icon {
+    font-size: rem(23);
+    color: #000;
+  }
+  // .advantages__title
+  &__title {
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: 140%;
+  }
+  // .advantages__text
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+
 
 
 
