@@ -25,6 +25,9 @@
   // .home-page__advantages
   &__advantages {
   }
+  // .home-page__about
+  &__about {
+  }
 }
 
 //====================================================================================================
@@ -628,6 +631,37 @@
   }
 }
 
+//====================================================================================================
+
+.about-timestore {
+  border-radius: rem(16);
+  margin: rem(24) 0;
+  padding: rem(24) rem(30);
+  border: 1px solid $colorBorderCardGrey;
+  display: flex;
+  gap: rem(16);
+  flex-direction: column;
+  align-items: flex-start;
+  // .about-timestore__title
+  &__title {
+    font-weight: 500;
+    font-size: rem(24);
+    line-height: 120%;
+  }
+  // .about-timestore__content
+  &__content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  // .about-timestore__more
+  &__more {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: math.div(24, 16);
+    padding: rem(8) 0;
+  }
+}
 
 
 
