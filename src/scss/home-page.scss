@@ -161,6 +161,7 @@
   &__item {
   }
 }
+
 .item-gender-catalog {
   flex: 1 0 auto;
   background-color: $colorBackgroundGrey;
@@ -355,7 +356,7 @@
   // .best-offer__description
   &__description {
     font-weight: 400;
-    font-size: 16px;
+    font-size: rem(16);
     line-height: 140%;
   }
   // .best-offer__timer
@@ -415,13 +416,13 @@
   // .timer__title
   &__title {
     font-weight: 500;
-    font-size: 16px;
+    font-size: rem(16);
     line-height: math.div(24, 16);
   }
   // .timer__body
   &__body {
     font-weight: 700;
-    font-size: 24px;
+    font-size: rem(24);
     line-height: 120%;
   }
   // .timer__hours
@@ -474,7 +475,7 @@
   // .product-card__link-title
   &__link-title {
     font-weight: 700;
-    font-size: 24px;
+    font-size: rem(24);
     line-height: 120%;
     @media (max-width: $mobile) {
       font-size: rem(22); 
@@ -551,7 +552,7 @@
   // .slider-sale__title
   &__title {
     font-weight: 500;
-    font-size: 24px;
+    font-size: rem(24);
     line-height: 120%;
     color: $colorRed;
     margin-bottom: rem(24);
@@ -559,7 +560,7 @@
   // .slider-sale__subtitle
   &__subtitle {
     font-weight: 400;
-    font-size: 16px;
+    font-size: rem(16);
     line-height: 130%;
     margin-bottom: rem(24);
   }
@@ -601,7 +602,7 @@
     flex-direction: column;
     align-items: center;
     padding: rem(24) rem(16);
-    gap: 8px;
+    gap: rem(8);
     background: $colorBackgroundGrey;
     border-radius: 16px;
     text-align: center;
@@ -626,7 +627,7 @@
   // .advantages__text
   &__text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: rem(16);
     line-height: 140%;
   }
 }
@@ -651,13 +652,13 @@
   // .about-timestore__content
   &__content {
     font-weight: 400;
-    font-size: 16px;
+    font-size: rem(16);
     line-height: 140%;
   }
   // .about-timestore__more
   &__more {
     font-weight: 500;
-    font-size: 16px;
+    font-size: rem(16);
     line-height: math.div(24, 16);
     padding: rem(8) 0;
   }
