@@ -4,9 +4,7 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 
-setTimeout(() => {
-    scrollingLeftRightMenuCatalogHeader();
-  }, 700)
+setTimeout(scrollingLeftRightMenuCatalogHeader, 700);
 
 function scrollingLeftRightMenuCatalogHeader() {
   const listMenuCatalogHeader = document.querySelector(".menu-catalog-header__list"),

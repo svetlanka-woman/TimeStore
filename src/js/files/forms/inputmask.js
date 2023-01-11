@@ -5,7 +5,7 @@
 import { flsModules } from "../modules.js";
 
 // Подключение модуля
-import "inputmask/dist/inputmask.min.js";
+import "inputmask/docs/inputmask.min.js";
 
 const inputMasks = document.querySelectorAll('input');
 if (inputMasks.length) {

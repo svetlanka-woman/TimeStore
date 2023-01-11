@@ -4,7 +4,7 @@ import TerserPlugin from "terser-webpack-plugin";
 import * as path from 'path';
 
 const srcFolder = "src";
-const buildFolder = "dist";
+const buildFolder = "docs";
 
 const paths = {
 	src: path.resolve(srcFolder),
