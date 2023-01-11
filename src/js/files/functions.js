@@ -415,7 +415,7 @@ export function tabs() {
 export function menuInit() {
 	if (document.querySelector(".icon-top-menu")) {
 		document.addEventListener("click", function (e) {
-			console.log(bodyLockStatus);
+			// console.log(bodyLockStatus);
 			if (bodyLockStatus && !document.documentElement.classList.contains("lock") && e.target.closest('.icon-top-menu')) {
 				bodyLockToggle();
 				document.documentElement.classList.toggle("top-menu-open");
@@ -429,7 +429,7 @@ export function menuInit() {
 	};
 	if (document.querySelector(".icon-menu-catalog")) {
 		document.addEventListener("click", function (e) {
-			console.log(bodyLockStatus);
+			// console.log(bodyLockStatus);
 			if (bodyLockStatus && (e.target.closest('.icon-menu-catalog') || e.target.closest('.close-menu-catalog'))) {
 				bodyLockToggle();
 				document.documentElement.classList.toggle("menu-catalog-open");

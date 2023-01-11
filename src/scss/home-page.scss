@@ -1,6 +1,10 @@
 //====================================================================================================
 
 .home-page {
+  margin-top: rem(156);
+  @media (max-width: $mobile) {
+    margin-top: rem(129); 
+  }
   // .home-page__container
   &__container {
   }

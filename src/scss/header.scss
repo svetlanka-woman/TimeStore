@@ -1,10 +1,27 @@
 //====================================================================================================
 
 .header {
+	position: absolute;
+	width: 100%;
+	z-index: 150;
+	// &._header-scroll {
+	// 	position: fixed;
+	// top: -200%;
+	// }
+	// &._header-show {
+	// 	transition: all 0.7s ease 0s;
+	// 	top: 0;
+	// }
+
 	// .header__top
 	&__top {
 		background-color: $mainColor;
 		color: #fff;
+	}
+	&._header-scroll &__body{
+		position: fixed;
+		width: 100%;
+		top: 0;
 	}
 	// .header__body
 	&__body {
@@ -15,6 +32,14 @@
 	&__catalog {
 		background-color: #fff;
 		border-bottom: 1px solid $colorBorderGrey;
+	}
+	&._header-scroll &__catalog{
+		position: fixed;
+		width: 100%;
+		top: rem(60);
+		@media (max-width: $mobile) {
+			top: rem(48); 
+		}
 	}
 }
 
@@ -66,7 +91,7 @@
 		top: 0;
 		left: 0;
 		background-color: $mainColor;
-		z-index: 151;
+		z-index: 152;
 		font-size: rem(12);
 		width: 100%;
 		height: rem(32);
@@ -80,7 +105,7 @@
 	// .menu-top-header__body
 	&__body {
 		background-color: $mainColor;
-		z-index: 150;
+		z-index: 151;
 		@media (max-width: $mobile) {
 			position: fixed;
 			width: 100%;
@@ -512,10 +537,11 @@
 	}
 	// .menu-catalog-header__link
 	&__link {
+		display: inline-block;
 		padding: rem(10) rem(12);
+		padding: 10px 12px;
 		font-weight: 600;
 		font-size: rem(14);
-		border-radius: 5px;
 		transition: all 0.3s ease 0s;
 		@media (any-hover: hover){
 			&:hover{
